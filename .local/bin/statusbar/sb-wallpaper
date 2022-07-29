@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# The clickable help menu. Middle click to restart wm.
+# Left click to change wallpaper. Middle click to restart wm.
 
 # If dwm is running, use dwm's readme and restart.
 pidof dwm >/dev/null &&
@@ -9,9 +9,9 @@ pidof dwm >/dev/null &&
 		restartwm() { i3 restart ;}
 
 case $BLOCK_BUTTON in
-	1) groff -mom "${READMEFILE:-${XDG_DATA_HOME:-$HOME/.local/share}/larbs/readme.mom}" -Tpdf | zathura - ;;
+	1) redditbg ;;
 	2) restartwm ;;
-	3) notify-send "❓ Help module" "\- Left click to open LARBS guide.
+	3) notify-send "❓ Wallpaper changer" "\- Left click to download a wallpaper from reddit.
 - Middle click to refresh window manager." ;;
 	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
-esac; echo ""
+esac; echo "[:)]"
