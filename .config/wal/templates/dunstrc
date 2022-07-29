@@ -12,16 +12,16 @@
 
 [urgency_low]
     background = "{color0}" # color0
-    foreground = "{color8}" # color8
+    foreground = "{color4}" # color4
     timeout = 3
 
 [urgency_normal]
-    foreground = "{color15}" # color15
+    foreground = "{color0}" # color0
     background = "{color4}" # color4
     timeout = 5
 
 [urgency_critical]
-    background = "{color1}" # color1
+    background = "{color0}" # color0
     foreground = "{color15}" # color15
-    frame_color = "{color11}" # color11
+    frame_color = "{color9}" # color11
     timeout = 10
