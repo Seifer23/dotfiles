@@ -7,7 +7,7 @@
 #    urgency = low
 #    script = dunst_spotify.sh
 
-#cal afegir també un script dunst_spotify.sh a .config/dunst :
+#cal afegir també un script dunst_spotify.sh a .local/bin :
 
 #pkill -RTMIN+11 dwmblocks
 
