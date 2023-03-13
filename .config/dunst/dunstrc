@@ -11,17 +11,24 @@
     format = "<b>%s</b>\n%b"
 
 [urgency_low]
-    background = "#1d2021"
-    foreground = "#928374"
+    background = "#211b18" # color0
+    foreground = "#AD8D61" # color4
     timeout = 3
 
 [urgency_normal]
-    foreground = "#ebdbb2"
-    background = "#458588"
+    foreground = "#211b18" # color0
+    background = "#AD8D61" # color4
     timeout = 5
 
 [urgency_critical]
-    background = "#1cc24d"
-    foreground = "#ebdbb2"
-    frame_color = "#fabd2f"
+    background = "#211b18" # color0
+    foreground = "#f4eac3" # color15
+    frame_color = "#D26243" # color11
     timeout = 10
+
+
+[spotify_notificaiton]
+    appname = Spotify
+    summary = "*"
+    urgency = low
+    script = "dunst_spotify"
