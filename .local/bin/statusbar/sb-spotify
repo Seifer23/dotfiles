@@ -1,5 +1,16 @@
 #!/usr/bin/env sh
 
+#aquest script funciona amb conjunció amb dunst, cal afegir això a dunstrc:
+
+#[spotify_notificaiton]
+#    appname = Spotify
+#    urgency = low
+#    script = dunst_spotify.sh
+
+#cal afegir també un script dunst_spotify.sh a .config/dunst :
+
+#pkill -RTMIN+11 dwmblocks
+
 case $BLOCK_BUTTON in
     1) sp play ;;
     3) sp next ;;
@@ -8,10 +19,12 @@ esac
 # aquest script utiliza "sp"
 
 # ses dades són a partir de sa 2na columna
+
+
 titol=$(sp current | awk 'FNR==4 {first = $1; $1 = ""; print $0}' | sed 's/&/i/g')
 
 if [ -n "$titol" ]; then
-    echo "阮$titol"
+    echo "$titol"
 else
     echo ""
 fi
