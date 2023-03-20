@@ -25,3 +25,9 @@
     foreground = "{color15}" # color15
     frame_color = "{color9}" # color11
     timeout = 10
+
+   [spotify_notification]
+    appname = Spotify
+    summary = "*"
+    urgency = low
+    script = "dunst_spotify"
