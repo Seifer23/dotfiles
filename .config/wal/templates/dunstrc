@@ -3,31 +3,37 @@
     follow = keyboard
     width = 370
     height = 350
-    offset = 0x19
+    origin = top-right
+    offset = 9x29
     padding = 2
     horizontal_padding = 2
     transparency = 25
-    font = Monospace 12
+    font = Caskaydia Cove Nerd Font 12
     format = "<b>%s</b>\n%b"
+    corner_radius = 4
 
 [urgency_low]
     background = "{color0}" # color0
     foreground = "{color4}" # color4
+    frame_color = "{color4}" # color4
     timeout = 3
 
 [urgency_normal]
-    foreground = "{color0}" # color0
-    background = "{color4}" # color4
+    background = "{color0}" # color0
+    foreground = "{color4}" # color4
+    frame_color = "{color4}" # color4
     timeout = 5
 
 [urgency_critical]
     background = "{color0}" # color0
     foreground = "{color15}" # color15
-    frame_color = "{color9}" # color11
+    frame_color = "{color9}" # color9
     timeout = 10
 
-   [spotify_notification]
+[spotify_notification]
     appname = Spotify
     summary = "*"
     urgency = low
     script = "dunst_spotify"
+    min_icon_size = 40
+    max_icon_size = 70
