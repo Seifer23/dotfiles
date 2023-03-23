@@ -1,0 +1,10 @@
+/*
+/*/
+!/.local/
+!/.config/
+!/.gitmodules
+!/.gtkrc-2.0
+!/.xprofile
+!/.zprofile
+!/.gitignore
+/.local/src/
