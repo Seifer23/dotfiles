@@ -1,0 +1,15 @@
+#!/bin/sh
+
+lines=$(ps aux | grep "mpv" | wc --lines);
+case $BLOCK_BUTTON in
+	1)if [ $lines -eq '1' ];
+	then
+		mpv "https://www.youtube.com/watch?v=jfKfPfyJRdk" --no-video &
+		#notify-send "Lo-fi Hip Hop Beats to Relax/Study to";
+	else
+		kill $(ps aux | grep "mpv" | head -n 1 | grep -Eo "[1-9]{1,5}" | head -n 1);
+	  	#notify-send ":(";
+	fi ;;
+esac;
+
+echo " ";
