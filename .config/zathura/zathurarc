@@ -12,4 +12,25 @@ map K zoom in
 map J zoom out
 map i recolor
 map p print
-map g goto top
+map b toggle_statusbar
+
+set default-bg                     "#211b18"
+set default-fg                     "#f4eac3"
+set statusbar-bg                   "#211b18"
+set statusbar-fg                   "#f4eac3"
+set inputbar-bg                    "#211b18"
+set inputbar-fg                    "#f4eac3"
+set notification-bg                "#211b18"
+set notification-fg                "#f4eac3"
+set notification-error-bg          "#211b18"
+set notification-error-fg          "#f4eac3"
+set notification-warning-bg        "#211b18"
+set notification-warning-fg        "#f4eac3"
+set highlight-color                "#D7A23E"
+set highlight-active-color         "#AD8D61"
+set completion-bg                  "#D7A23E"
+set completion-fg                  "#AD8D61"
+set completion-highlight-bg        "#D7A23E"
+set completion-highlight-fg        "#AD8D61"
+set recolor-lightcolor             "#211b18"
+set recolor-darkcolor              "#f4eac3"
