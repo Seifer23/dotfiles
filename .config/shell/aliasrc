@@ -22,7 +22,8 @@ alias \
 	mkd="mkdir -pv" \
 	yt="yt-dlp --embed-metadata -i" \
 	yta="yt -x -f bestaudio/best" \
-	ffmpeg="ffmpeg -hide_banner"
+	ffmpeg="ffmpeg -hide_banner" \
+	ani-cli="ani-cli -q 720"
 
 # Colorize commands when possible.
 alias \
@@ -45,10 +46,24 @@ alias \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
-	z="zathura"
+	z="zathura" \
+	bt="bluetoothctl"
 
 alias \
 	lf="lfub" \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+
+#apuntar a assignatures :D
+alias \
+	SSIS="cd ~/UPC/2A/SSIS" \
+	ssis="cd ~/UPC/2A/SSIS" \
+	PIE="cd ~/UPC/2A/PIE" \
+	pie="cd ~/UPC/2A/PIE" \
+	DGD="cd ~/UPC/2A/DGD" \
+	dgd="cd ~/UPC/2A/DGD" \
+	EM="cd ~/UPC/2A/EM" \
+	em="cd ~/UPC/2A/EM" \
+	AST="cd ~/UPC/2B/AST" \
+	ast="cd ~/UPC/2B/AST && ls"
