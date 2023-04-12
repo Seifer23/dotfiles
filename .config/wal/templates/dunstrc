@@ -7,11 +7,12 @@
     offset = 9x29
     padding = 2
     horizontal_padding = 2
-    transparency = 25
+    transparency = 10
     font = Caskaydia Cove Nerd Font 12
     format = "<b>%s</b>\n%b"
     corner_radius = 4
-
+    min_icon_size = 40
+    max_icon_size = 70
 [urgency_low]
     background = "{color0}" # color0
     foreground = "{color4}" # color4
@@ -27,8 +28,15 @@
 [urgency_critical]
     background = "{color0}" # color0
     foreground = "{color15}" # color15
-    frame_color = "{color9}" # color9
+    frame_color = "{color3}" # color9
     timeout = 10
+
+[mpd_song_change]
+    appname = Music
+    background = "{color0}" #color1
+    foreground = "{color7}" #color7
+    frame_color = "{color1}" #color1
+    timeout = 5
 
 [spotify_notification]
     appname = Spotify
