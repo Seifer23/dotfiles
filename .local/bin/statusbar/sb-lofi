@@ -1,15 +1,22 @@
 #!/bin/sh
 
-lines=$(ps aux | grep "mpv" | wc --lines);
-case $BLOCK_BUTTON in
-	1)if [ $lines -eq '1' ];
-	then
-		mpv "https://www.youtube.com/watch?v=jfKfPfyJRdk" --no-video &
-		#notify-send "Lo-fi Hip Hop Beats to Relax/Study to";
-	else
-		kill $(ps aux | grep "mpv" | head -n 1 | grep -Eo "[1-9]{1,5}" | head -n 1);
-	  	#notify-send ":(";
-	fi ;;
-esac;
 
+notify() {
+	case $1 in
+		"lofi") notify-send "Stream started:" "Lofi Hip-Hop beats to relax/study to";;
+		"synth") notify-send "Stream started:" "Synthwave radio - beats to chill/game to";;
+	esac;
+}
+
+lines=$(ps aux | grep "mpv" | wc --lines);
+if [ $lines -eq '1' ]; #normal click starts lofi
+then
+	case $BLOCK_BUTTON in
+	1) notify "lofi" & mpv "https://www.youtube.com/watch?v=jfKfPfyJRdk" --no-video;;
+	3) notify "synth" & mpv "https://www.youtube.com/watch?v=MVPTGNGiI-4" --no-video;;
+	esac;
+else
+	killall mpv
+  	notify-send ":(";
+fi
 echo " ";
