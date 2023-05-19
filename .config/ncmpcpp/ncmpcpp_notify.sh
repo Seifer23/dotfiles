@@ -31,4 +31,4 @@ elif [ ! -f "${ALBUM_ART_PATH}" ] && [ "${cover_path}" == "" ]; then
 	cover_path=$FALLBACK_DIR
 fi
 
-notify-send -i "${cover_path}" "Now Playing" "$(mpc --format '%title% - %artist%' current)"
+notify-send -i "${cover_path}" "Now Playing" "$(mpc --format '%title%\n%artist%' current)"
