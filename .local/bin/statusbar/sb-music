@@ -1,6 +1,6 @@
 #!/bin/sh
 
-filter() { 
+filter() {
   title=$(mpc $1 -f %title%)
   if grep -qw "paused" <<< $title; then
       echo " $title" | head -n 1
@@ -14,12 +14,16 @@ pidof -x sb-mpdup >/dev/null 2>&1 || sb-mpdup >/dev/null 2>&1 &
 
 case $BLOCK_BUTTON in
 	1) titol=$(filter status) ; setsid -f "$TERMINAL" -e ncmpcpp ;;
-	2) titol=$(filter toggle) ;; 
-  3) titol=$(filter status) ; notify-send "🎵 Music module" "\- Shows mpd song playing.
--  when paused.
-- Left click opens ncmpcpp.
-- Middle click pauses.
-- Scroll changes track.";;  # right click, pause/unpause
+	2) titol=$(filter toggle) ;;
+	3) titol=$(filter status) ; sh ${HOME}/.local/bin/ncmpcppnotif;;
+
+
+#	3) titol=$(filter status) ; notify-send "🎵 Music module" "\- Shows mpd song playing.
+#-  when paused.
+#- Left click opens ncmpcpp.
+#- Middle click pauses.
+#- Scroll changes track.";;  # right click, pause/unpause
+
 	4) titol=$(filter prev) ;;  # scroll up, previous
 	5) titol=$(filter next) ;;  # scroll down, next
 	6) titol=$(filter status) ; "$TERMINAL" -e "$EDITOR" "$0" ;;
