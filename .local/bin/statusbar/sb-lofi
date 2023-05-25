@@ -3,8 +3,8 @@
 
 notify() {
 	case $1 in
-		"lofi") notify-send "Stream started:" "Lofi Hip-Hop beats to relax/study to";;
-		"synth") notify-send "Stream started:" "Synthwave radio - beats to chill/game to";;
+		"lofi") notify-send -i "${HOME}/.local/bin/statusbar/.resources/lofi.jpg" "Stream started:" "Lofi Hip-Hop beats to relax/study to";;
+		"synth") notify-send -i "${HOME}/.local/bin/statusbar/.resources/synthboy.png" "Stream started:" "Synthwave radio - beats to chill/game to";;
 	esac;
 }
 
