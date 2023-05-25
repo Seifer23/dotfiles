@@ -1,6 +1,6 @@
 # Seifer23's dotfiles
 
-Forked from LukeSmithxyz, these dotfiles are deployed by my fork of [LARBS]{https://github.com/Seifer23/LARBS}
+Forked from LukeSmithxyz, these dotfiles are deployed by my fork of [LARBS](https://github.com/Seifer23/LARBS)
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
