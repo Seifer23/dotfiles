@@ -66,4 +66,6 @@ alias \
 	EM="cd ~/UPC/2A/EM" \
 	em="cd ~/UPC/2A/EM" \
 	AST="cd ~/UPC/2B/AST" \
-	ast="cd ~/UPC/2B/AST && ls"
+	ast="cd ~/UPC/2B/AST"\
+	FISE="cd ~/UPC/2B/FISE"\
+	fise="cd ~/UPC/2B/FISE"
