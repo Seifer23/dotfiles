@@ -68,4 +68,6 @@ alias \
 	AST="cd ~/UPC/2B/AST" \
 	ast="cd ~/UPC/2B/AST"\
 	FISE="cd ~/UPC/2B/FISE"\
-	fise="cd ~/UPC/2B/FISE"
+	fise="cd ~/UPC/2B/FISE"\
+	ICOM="cd ~/UPC/2B/ICOM"\
+	icom="cd ~/UPC/2B/ICOM"
