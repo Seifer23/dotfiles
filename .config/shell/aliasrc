@@ -70,4 +70,6 @@ alias \
 	FISE="cd ~/UPC/2B/FISE"\
 	fise="cd ~/UPC/2B/FISE"\
 	ICOM="cd ~/UPC/2B/ICOM"\
-	icom="cd ~/UPC/2B/ICOM"
+	icom="cd ~/UPC/2B/ICOM"\
+	IPAV="cd ~/UPC/2B/IPAV"\
+	ipav="cd ~/UPC/2B/IPAV"
