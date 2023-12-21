@@ -72,4 +72,6 @@ alias \
 	ICOM="cd ~/UPC/2B/ICOM"\
 	icom="cd ~/UPC/2B/ICOM"\
 	IPAV="cd ~/UPC/2B/IPAV"\
-	ipav="cd ~/UPC/2B/IPAV"
+	ipav="cd ~/UPC/2B/IPAV"\
+	onele="cd ~/UPC/2B/ONELE"\
+	ONELE="cd ~/UPC/2B/ONELE"
