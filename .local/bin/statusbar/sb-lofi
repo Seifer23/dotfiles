@@ -13,7 +13,7 @@ if [ $lines -eq '1' ]; #normal click starts lofi
 then
 	case $BLOCK_BUTTON in
 	1) notify "lofi" & mpv "https://www.youtube.com/watch?v=jfKfPfyJRdk" --no-video;;
-	3) notify "synth" & mpv "https://www.youtube.com/watch?v=MVPTGNGiI-4" --no-video;;
+	3) notify "synth" & mpv "https://www.youtube.com/watch?v=4xDzrJKXOOY" --no-video;;
 	esac;
 else
 	killall mpv
